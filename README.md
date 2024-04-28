@@ -35,9 +35,17 @@ Before running the application, you must set up the necessary configuration:
     MDC_API_KEY=your_monday_com_api_key_here
     ```
 
-3. Input: The application reads survey data from the `input/` directory. Make sure this directory exists or update the input paths in the code.
-4. Logging: Logs are written to the `logs/` directory. Ensure this directory exists or update the logging configuration in the code.
-5. Output: The application generates output files in the `output/` directory. Make sure this directory exists or update the output paths in the code.
+3. Mapping: Following is the sample data that was used for mapping the survey data to Monday.com fields. This mapping is hardcoded in the code and can be updated as needed.
+
+    ```CSV
+    Name,Email,Phone Number,Company,Survey Score,Title,Comments
+   John Doe,johndoe@example.com,555-0100,Acme Corp,87,Manager,Very satisfied with the service.
+   Jane Smith,janesmith@example.com,555-0101,Orbit Inc,92,Director,Great product, will recommend!
+   ...
+    ```
+4. Input: The application reads survey data from the `input/` directory. Make sure this directory exists or update the input paths in the code.
+5. Logging: Logs are written to the `logs/` directory. Ensure this directory exists or update the logging configuration in the code.
+6. Output: The application generates output files in the `output/` directory. Make sure this directory exists or update the output paths in the code.
 
 ## Usage
 
